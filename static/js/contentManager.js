@@ -446,20 +446,6 @@ const pageContents = {
     }
 };
 
-// Varsayılan dili belirle
-function getLanguage() {
-    return localStorage.getItem('language') || 'tr'; 
+function loadPageContent(page, lang) {
+    document.getElementById('page-content').innerHTML = pageContents[page][lang];
 }
-
-// Sayfa içeriğini yükle
-function loadPageContent(page) {
-    const lang = getLanguage();
-    const content = pageContents[page]?.[lang] || `<h1>Sayfa Bulunamadı</h1>`;
-    document.getElementById('content').innerHTML = content;
-}
-
-// Dil değiştiğinde sayfayı güncelle
-function changeLanguage(lang) {
-    localStorage.setItem('language', lang);
-    location.reload();
-};

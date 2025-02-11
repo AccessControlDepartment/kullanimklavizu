@@ -1,11 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    function getLanguage() {
-        return localStorage.getItem('language') || 'tr';
-    }
+    let currentLang = localStorage.getItem('language') || 'tr'; // Varsayılan olarak Türkçe
 
-    function renderNavbar(lang) {
-        const navbars = {
-            tr: `
+    const NAVBAR_TR = `
             <nav class="navbar navbar-expand-xl">
             <div class="container-xl">
                 <div>
@@ -14,15 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
                         <i style="margin-left:10px;">ERİŞİM REJİMİ DEPARTMANI</i>
                     </a>
                 </div>
-                <div class="d-flex justify-content-start align-items-center gap-2 flex-wrap">
-                    <a href="#" 
-                    class="btn btn-outline-primary d-flex align-items-center justify-content-center" 
+                <div class="d-flex justify-content-start align-items-center gap-2 flex-wrap justify-content-md-end">
+                    <a href="#" data-lang="tr"
+                    class="lang-btn btn btn-outline-primary d-flex align-items-center justify-content-center" 
                     style="gap: 5px; min-width: 100px; max-width: 140px; height: auto; padding: 5px 10px;">
                         <img src="./static/img/tr.png" alt="Türkçe" style="width: 20px; height: auto;">
                         <span style="font-size: 0.9rem;">Türkçe</span>
                     </a>
-                    <a href="#" 
-                    class="btn btn-outline-primary d-flex align-items-center justify-content-center" 
+                    <a href="#" data-lang="ru"
+                    class="lang-btn btn btn-outline-primary d-flex align-items-center justify-content-center" 
                     style="gap: 5px; min-width: 100px; max-width: 140px; height: auto; padding: 5px 10px;">
                         <img src="./static/img/rus.png" alt="Русский" style="width: 20px; height: auto;">
                         <span style="font-size: 0.9rem;">Русский</span>
@@ -235,8 +231,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         </nav>
-            `,
-            ru: `
+            `;
+            const NAVBAR_RU = `
             <nav class="navbar navbar-expand-xl">
             <div class="container-xl">
                 <div>
@@ -245,15 +241,15 @@ document.addEventListener('DOMContentLoaded', () => {
                         <i style="margin-left:10px;">Система управления пропускным режимом</i>
                     </a>
                 </div>
-                <div class="d-flex justify-content-start align-items-center gap-2 flex-wrap">
-                    <a href="tr.html" 
-                    class="btn btn-outline-primary d-flex align-items-center justify-content-center" 
+                <div class="d-flex justify-content-start align-items-center gap-2 flex-wrap justify-content-md-end">
+                    <a href="#" data-lang="tr"
+                    class="lang-btn btn btn-outline-primary d-flex align-items-center justify-content-center" 
                     style="gap: 5px; min-width: 100px; max-width: 140px; height: auto; padding: 5px 10px;">
                         <img src="./static/img/tr.png" alt="Türkçe" style="width: 20px; height: auto;">
                         <span style="font-size: 0.9rem;">Türkçe</span>
                     </a>
-                    <a href="rus.html" 
-                    class="btn btn-outline-primary d-flex align-items-center justify-content-center" 
+                    <a href="#" data-lang="ru"
+                    class="lang-btn btn btn-outline-primary d-flex align-items-center justify-content-center" 
                     style="gap: 5px; min-width: 100px; max-width: 140px; height: auto; padding: 5px 10px;">
                         <img src="./static/img/rus.png" alt="Русский" style="width: 20px; height: auto;">
                         <span style="font-size: 0.9rem;">Русский</span>
@@ -455,31 +451,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         </nav>
-            `
-        };
+            `;
 
-        document.getElementById('navbar').innerHTML = navbars[lang] || navbars['tr'];
-    }
-
-    // Navbar'ı yükle
-    renderNavbar(getLanguage());
-
-    // Dil değiştirme
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const lang = e.target.getAttribute('data-lang');
-            changeLanguage(lang);
+            document.getElementById('navbar').innerHTML = (currentLang === 'ru') ? NAVBAR_RU : NAVBAR_TR;
+        
+            // Dil değiştirme butonlarını ekle
+            document.querySelectorAll('.lang-btn').forEach(button => {
+                button.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    let selectedLang = button.getAttribute('data-lang');
+                    localStorage.setItem('language', selectedLang);
+                    location.reload(); // Sayfayı yenile ve yeni dili yükle
+                });
+            });
+        
         });
-    });
-
-    // Sayfa değişimi
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const page = e.target.getAttribute('data-page');
-            localStorage.setItem('currentPage', page);
-            loadPageContent(page);
-        });
-    });
-});
