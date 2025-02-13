@@ -2240,7 +2240,186 @@ const pageContents = {
         </div>`
     },
     kyenileme: {
-        tr: ``,
+        tr: `<div class="space-y-4">
+        <i class="mb-3 mt-3 fw-bold fs-3 ps-2">Personeller İçin Kart Yenileme İşlemleri</i>
+            <div id="faq-1" class="accordion" role="tablist" aria-multiselectable="true">
+                <div class="accordion-item">
+                    <p class="ps-3"><br>Kart işlemlerine ilişkin dikkat edilmesi gereken adımlar şu şekildedir:<br><br>
+                        <b>1. Fiziksel Kart Teslimi:</b> Maille gönderilen evraklar, kart fiziksel olarak tarafımıza teslim edildiğinde kontrol edilmekte olup, eksiksiz ve doğru 
+                        olması durumunda işleme alınır.<br><br>
+                        <b>2. Tutanak Gerektiren İşlemler:</b> Tutanak gereken işlemler için tutanakların mutlaka ıslak imzalı ve kaşeli olarak fiziki teslimi gereklidir.<br><br>
+                        <b>3. Evrak Adlandırması:</b> Mail ile iletilmesi gereken belgeler, personelin adı ve soyadı pasaport veya kimlikte yazdığı gibi büyük latin harfleri ile yazılmalı, 
+                        konu başlığı ise uygun şekilde belirtilmelidir.<br><br>
+                        <b>4. Mail Adresleri:</b> Kart işlemleri için gerekli tüm evraklar eş zamanlı olarak aşağıdaki iki mail adresine gönderilmelidir:<br>
+                        •	<a href="mailto:tugbahan.karakaya@t2ic.com">tugbahan.karakaya@t2ic.com</a><br>
+                        •	<a href="mailto:muslum.elibol@t2ic.com">muslum.elibol@t2ic.com</a><br><br>
+                        <b>5. Kart Dağıtımı:</b> Basılan kartlar dağıtıma hazır olduğunda, personeller bizzat ana nizamiyedeki kart dağıtım konteynerinden kartlarını teslim alabilirler:<br>
+                        •	Türk vatandaşları TC kimlikleriyle,<br>
+                        •	Yabancı personeller dış pasaportları ile teslim alacaklardır.<br>
+                        <b>6. İşten Çıkış İşlemleri:</b> İş çıkışı alan personeller kartlarını iptal ettirmekle yükümlüdür. Kart iptali, kart iptal prosedürüne uygun olarak fiziken yapılmalıdır. Personeller, ilişki kesme formlarıyla geldiklerinde evraklar imzalandıktan sonra, fotokopileri ile birlikte AKKUYU NGS şantiyesinden çıkış yapabilirler.<br><br>
+                    </p>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header" role="tab">
+                        <button class="accordion-button fs-3 collapsed fw-bolder" data-bs-toggle="collapse" data-bs-target="#faq-1-1" aria-expanded="true">Arızalı, Kırık, Yıpranmış Kart İşlemleri</button>
+                    </div>
+                    <div id="faq-1-1" class="accordion-collapse collapse" role="tabpanel" data-bs-parent="#faq-1">
+                        <div class="accordion-body pt-0">
+                            <p>Akkuyu geçici giriş kartının arıza, kırılma veya üzerindeki bilgilerin okunamaz hale gelmesi durumunda, kart Güvenlik Departmanı ofisine teslim edilmeli ve aşağıdaki 
+                                belgeler mail yoluyla gönderilmelidir:<br><br>
+                                <b>Mail Konu Başlığı:</b><br>
+                                Mailin konusu personelin adı ve soyadı büyük, latin harfleri ile yazılmalıdır:<br>
+                                •	Örneğin: "ARIZALI KART ANTON ANTONOV" veya "KIRIK KART ALİ KAYA"<br><br>
+                                <b>Gerekli Belgeler:</b><br>
+                                <b>1. Personel Fotoğrafı:</b> Arka fonu beyaz olan, net ve düz bir fotoğraf olmalıdır.<br>
+                                <b>2. SGK 4A İşe Giriş Bildirgesi:</b> E-devlet hesabından alınabilir, PDF formatında olmalıdır.<br>
+                                <b>3. Personel Giriş Excel Tablosu:</b> Tam ve eksiksiz doldurulmuş olmalıdır.<br><br>
+                                <b>Ek Belgeler (Yabancı Personeller İçin):</b><br>
+                                <b>4. Mavi Kimlik Taraması:</b> Arkalı önlü şekilde birleştirilmiş tek PDF formatında olmalıdır. Eğer mavi kimlik hazır değilse çalışma izni başvurusu ve ekran 
+                                görüntüsü iletilmelidir.<br>
+                                &nbsp&nbsp&nbsp •	Görevlendirme Durumu: Personel görevlendirme ile sahaya geldiyse, görevlendirme belgesi ve çalışma defteri de PDF formatında gönderilmelidir.<br>
+                                <b>5. Pasaport Taraması:</b> Mevcut dış pasaportun PDF taraması yapılmalıdır. Pasaport değişikliği varsa hem eski hem de yeni pasaport taramaları gönderilmelidir.<br><br>
+                                <u style="color: red;"><b>ÖNEMLİ:</b></u>  Belgelerin isimlendirilmesi, dosyalama sisteminde kolaylık sağlamak amacıyla yukarıdaki talimatlara uygun olarak yapılmalıdır.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header" role="tab">
+                        <button class="accordion-button fs-3 collapsed fw-bolder" data-bs-toggle="collapse" data-bs-target="#faq-1-2" aria-expanded="true">Kayıp Kart İşlemleri</button>
+                    </div>
+                    <div id="faq-1-2" class="accordion-collapse collapse" role="tabpanel" data-bs-parent="#faq-1">
+                        <div class="accordion-body pt-0">
+                            <p>Personel Akkuyu geçici giriş kartını saha içinde veya dışında kaybettiğinde, firmasının veya personelin kendisinin düzenlediği imzalı ve kaşeli bir 
+                                tutanak Güvenlik Departmanı ofisine fiziksel olarak teslim edilmeli ve aşağıdaki belgeler belirtilen e-posta adreslerine gönderilmelidir.<br><br>
+                                <b>Mail Konu Başlığı:</b><br>
+                                Mailin konusu personelin adı ve soyadı büyük, latin harfleri ile yazılmalıdır:<br>
+                                •	Örneğin: "ARIZALI KART ANTON ANTONOV" veya "KIRIK KART ALİ KAYA"<br><br>
+                                <b>Gerekli Belgeler:</b><br>
+                                <b>1. Personel Fotoğrafı:</b> Arka fonu beyaz olan, net ve düz bir fotoğraf olmalıdır.<br>
+                                <b>2. SGK 4A İşe Giriş Bildirgesi:</b> E-devlet hesabından alınabilir, PDF formatında olmalıdır.<br>
+                                <b>3. Personel Giriş Excel Tablosu:</b> Tam ve eksiksiz doldurulmuş olmalıdır.<br>
+                                <b>4. Kayıp Kart Tutanağı:</b> İmzalı ve kaşeli olarak teslim edilmelidir.<br><br>
+                                <b>Ek Belgeler (Yabancı Personeller İçin):</b><br>
+                                <b>4. Mavi Kimlik Taraması:</b> Arkalı önlü şekilde birleştirilmiş tek PDF formatında olmalıdır. Eğer mavi kimlik hazır değilse çalışma izni başvurusu ve ekran 
+                                görüntüsü iletilmelidir.<br>
+                                &nbsp&nbsp&nbsp •	Görevlendirme Durumu: Personel görevlendirme ile sahaya geldiyse, görevlendirme belgesi ve çalışma defteri de PDF formatında gönderilmelidir.<br>
+                                <b>5. Pasaport Taraması:</b> Mevcut dış pasaportun PDF taraması yapılmalıdır. Pasaport değişikliği varsa hem eski hem de yeni pasaport taramaları gönderilmelidir.<br><br>
+                                <u style="color: red;"><b>ÖNEMLİ:</b></u>  Belgelerin isimlendirilmesi, dosyalama sisteminde kolaylık sağlamak amacıyla yukarıdaki talimatlara uygun olarak yapılmalıdır.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header" role="tab">
+                        <button class="accordion-button fs-3 collapsed fw-bolder" data-bs-toggle="collapse" data-bs-target="#faq-1-3" aria-expanded="true">Hatalı Başvuru</button>
+                    </div>
+                    <div id="faq-1-3" class="accordion-collapse collapse" role="tabpanel" data-bs-parent="#faq-1">
+                        <div class="accordion-body pt-0">
+                            <p>Hatalı basılan kartlar, ana nizamiyedeki kart dağıtım konteynerında personele teslim edilmeyebilir. Teslim edilmişse, kartın değişimi için kartın 
+                                fiziksel olarak Güvenlik Departmanına götürülmesi gereklidir. İşlemlerin tamamlanabilmesi için aşağıdaki belgelerin, yukarıda belirtilen e-posta 
+                                adreslerine gönderilmesi gerekmektedir.<br><br>
+                               KONU: Hatalı işlem, mail konusunda belirtilir ,örneğin "HATALI FOTO", "HATALI FİRMA ADI", "HATALI İSİM", "HATALI SOYİSİM", "HATALI TC", 
+                               <b>Mail Konu Başlığı:</b><br>
+                                Mailin konusu personelin adı ve soyadı büyük, latin harfleri ile yazılmalıdır:<br>
+                                •	Örneğin: "HATALI FOTO ANTON ANTONOV" veya "HATALI FİRMA İSMİ ALİ KAYA"<br><br>
+                                <b>1. Personel Fotoğrafı:</b> Arka fonu beyaz olan, net ve düz bir fotoğraf olmalıdır.<br>
+                                <b>2. SGK 4A İşe Giriş Bildirgesi:</b> E-devlet hesabından alınabilir, PDF formatında olmalıdır.<br>
+                                <b>3. Personel Giriş Excel Tablosu:</b> Tam ve eksiksiz doldurulmuş olmalıdır.<br>
+                                <b>4. TC Kimlik Taraması:</b> Her iki tarafı taranmış PDF olarak iletilmelidir. Her iki tarafı taranmış PDF olarak iletilmelidir.<br><br>
+                                <b>Ek Belgeler (Yabancı Personeller İçin):</b><br>
+                                <b>5. Mavi Kimlik Taraması:</b> Arkalı önlü şekilde birleştirilmiş tek PDF formatında olmalıdır. Eğer mavi kimlik hazır değilse çalışma izni başvurusu ve ekran 
+                                görüntüsü iletilmelidir.<br>
+                                &nbsp&nbsp&nbsp •	Görevlendirme Durumu: Personel görevlendirme ile sahaya geldiyse, görevlendirme belgesi ve çalışma defteri de PDF formatında gönderilmelidir.<br>
+                                <b>6. Pasaport Taraması:</b> Mevcut dış pasaportun PDF taraması yapılmalıdır. Pasaport değişikliği varsa hem eski hem de yeni pasaport taramaları gönderilmelidir.<br><br>
+                                <u style="color: red;"><b>ÖNEMLİ:</b></u>  Belgelerin isimlendirilmesi, dosyalama sisteminde kolaylık sağlamak amacıyla yukarıdaki talimatlara uygun olarak yapılmalıdır.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header" role="tab">
+                        <button class="accordion-button fs-3 collapsed fw-bolder" data-bs-toggle="collapse" data-bs-target="#faq-1-4" aria-expanded="true">Firma Değişimi</button>
+                    </div>
+                    <div id="faq-1-4" class="accordion-collapse collapse" role="tabpanel" data-bs-parent="#faq-1">
+                        <div class="accordion-body pt-0">
+                            <div style="display: flex;">
+                                <p>Akkuyu NGS şantiyesinde firma değişikliği yapmak isteyen personelin, bu değişikliği gerçekleştirebilmesi için firma değişikliği prosedürünü tamamlaması gerekmektedir. 
+                                    Bu süreçte, personelin eski firmasından çıkış işlemi yaparak yeni firmasında işe başlaması sağlanacaktır.<br><br>
+                                    <b>İşlem Adımları</b><br>
+                                    <b>Eski Firma:</b> Personel veya firması, ilişik kesme formu veya çıkış bildirgesi ile birlikte Akkuyu geçici kartını Güvenlik Departmanına teslim etmelidir.<br>
+                                    <b>Yeni Firma:</b> Gerekli belgeleri mail yoluyla iletmelidir. Sağlık takibi zorunlu olan firmalar, ek olarak Sağlık Takip Formunu da mail yoluyla göndermelidir.<br>
+                                    <b>Mail Konu Başlığı:</b><br>
+                                    Mailin konusu personelin adı ve soyadı büyük, latin harfleri ile yazılmalıdır:<br>
+                                    •	Örneğin: "FİRMA DEĞİŞİKLİĞİ ANTON ANTONOV" veya "FİRMA DEĞİŞİKLİĞİ ALİ KAYA"<br><br>
+                                    <b>1. Personel Fotoğrafı:</b> Arka fonu beyaz olan, net ve düz bir fotoğraf olmalıdır.<br>
+                                    <b>2. SGK 4A İşe Giriş Bildirgesi:</b> E-devlet hesabından alınabilir, PDF formatında olmalıdır.<br>
+                                    <b>3. Personel Giriş Excel Tablosu:</b> Tam ve eksiksiz doldurulmuş olmalıdır.<br>
+                                    <b>4. TC Kimlik Taraması:</b> Her iki tarafı taranmış PDF olarak iletilmelidir. Her iki tarafı taranmış PDF olarak iletilmelidir.<br><br>
+                                    <b>Ek Belgeler (Yabancı Personeller İçin):</b><br>
+                                    <b>5. Mavi Kimlik Taraması:</b> Arkalı önlü şekilde birleştirilmiş tek PDF formatında olmalıdır. Eğer mavi kimlik hazır değilse çalışma izni başvurusu ve ekran 
+                                    görüntüsü iletilmelidir.<br>
+                                    &nbsp&nbsp&nbsp •	Görevlendirme Durumu: Personel görevlendirme ile sahaya geldiyse, görevlendirme belgesi ve çalışma defteri de PDF formatında gönderilmelidir.<br>
+                                    <b>6. Pasaport Taraması:</b> Mevcut dış pasaportun PDF taraması yapılmalıdır. Pasaport değişikliği varsa hem eski hem de yeni pasaport taramaları gönderilmelidir.<br><br>
+                                    <u style="color: red;"><b>ÖNEMLİ:</b></u>  Belgelerin isimlendirilmesi, dosyalama sisteminde kolaylık sağlamak amacıyla yukarıdaki talimatlara uygun olarak yapılmalıdır.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header" role="tab">
+                        <button class="accordion-button fs-3 collapsed fw-bolder" data-bs-toggle="collapse" data-bs-target="#faq-1-5" aria-expanded="true">İsim Soyisim Değişikliği</button>
+                    </div>
+                    <div id="faq-1-5" class="accordion-collapse collapse" role="tabpanel" data-bs-parent="#faq-1">
+                        <div class="accordion-body pt-0">
+                            <div style="display: flex;">
+                                <p>Saha içerisinde çalışan bir personelin pasaport veya kimlik bilgilerinde ad veya soyadı değişikliği olması durumunda, ilgili belgelerin eksiksiz olarak mail yoluyla 
+                                    iletilmesi gerekmektedir. Ayrıca, personelin geçici giriş kartını Güvenlik Departmanı ofisine fiziksel olarak teslim etmesi zorunludur.<br><br> 
+                                    <b>Mail Konu Başlığı:</b><br>
+                                    Mailin konusu personelin adı ve soyadı büyük, latin harfleri ile yazılmalıdır:<br>
+                                    •	Örneğin: "İSİM DEĞİŞİKLİĞİ ANTON ANTONOV" veya "SOYİSİM DEĞİŞİKLİĞİ ALİ KAYA"<br><br>
+                                    <b>1. Personel Fotoğrafı:</b> Arka fonu beyaz olan, net ve düz bir fotoğraf olmalıdır.<br>
+                                    <b>2. SGK 4A İşe Giriş Bildirgesi:</b> E-devlet hesabından alınabilir, PDF formatında olmalıdır.<br>
+                                    <b>3. Personel Giriş Excel Tablosu:</b> Tam ve eksiksiz doldurulmuş olmalıdır.<br><br>
+                                    <b>Ek Belgeler (Yabancı Personeller İçin):</b><br>
+                                    <b>5. Mavi Kimlik Taraması:</b> Arkalı önlü şekilde birleştirilmiş tek PDF formatında olmalıdır. Eğer mavi kimlik hazır değilse çalışma izni başvurusu ve ekran 
+                                    görüntüsü iletilmelidir.<br>
+                                    &nbsp&nbsp&nbsp •	Görevlendirme Durumu: Personel görevlendirme ile sahaya geldiyse, görevlendirme belgesi ve çalışma defteri de PDF formatında gönderilmelidir.<br>
+                                    <b>6. Pasaport Taraması:</b> Mevcut dış pasaportun PDF taraması yapılmalıdır. Pasaport değişikliği varsa hem eski hem de yeni pasaport taramaları gönderilmelidir.<br><br>
+                                    <u style="color: red;"><b>ÖNEMLİ:</b></u>  Belgelerin isimlendirilmesi, dosyalama sisteminde kolaylık sağlamak amacıyla yukarıdaki talimatlara uygun olarak yapılmalıdır.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header" role="tab">
+                        <button class="accordion-button fs-3 collapsed fw-bolder" data-bs-toggle="collapse" data-bs-target="#faq-1-6" aria-expanded="true">Pasaport Değişimi</button>
+                    </div>
+                    <div id="faq-1-6" class="accordion-collapse collapse" role="tabpanel" data-bs-parent="#faq-1">
+                        <div class="accordion-body pt-0">
+                            <p>Saha içinde çalışan bir personelin pasaport değişikliği durumunda, gerekli belgelerin eksiksiz bir şekilde mail yoluyla iletilmesi ve geçici giriş 
+                                kartının Güvenlik Departmanı ofisine fiziksel olarak teslim edilmesi gerekmektedir.<br><br> 
+                                <b>Mail Konu Başlığı:</b><br>
+                                Mailin konusu personelin adı ve soyadı büyük, latin harfleri ile yazılmalıdır:<br>
+                                •	Örneğin: "PASAPORT DEĞİŞİKLİĞİ ANTON ANTONOV"<br><br>
+                                <b>1. Personel Fotoğrafı:</b> Arka fonu beyaz olan, net ve düz bir fotoğraf olmalıdır.<br>
+                                <b>2. SGK 4A İşe Giriş Bildirgesi:</b> E-devlet hesabından alınabilir, PDF formatında olmalıdır.<br>
+                                <b>3. Personel Giriş Excel Tablosu:</b> Tam ve eksiksiz doldurulmuş olmalıdır.<br><br>
+                                <b>Ek Belgeler (Yabancı Personeller İçin):</b><br>
+                                <b>5. Mavi Kimlik Taraması:</b> Arkalı önlü şekilde birleştirilmiş tek PDF formatında olmalıdır. Eğer mavi kimlik hazır değilse çalışma izni başvurusu ve ekran 
+                                görüntüsü iletilmelidir.<br>
+                                &nbsp&nbsp&nbsp •	Görevlendirme Durumu: Personel görevlendirme ile sahaya geldiyse, görevlendirme belgesi ve çalışma defteri de PDF formatında gönderilmelidir.<br>
+                                <b>6. Pasaport Taraması:</b> Mevcut dış pasaportun PDF taraması yapılmalıdır. Pasaport değişikliği varsa hem eski hem de yeni pasaport taramaları gönderilmelidir.<br><br>
+                                <u style="color: red;"><b>ÖNEMLİ:</b></u> Eski ve yeni pasaportlar, personelin adı ve soyadı büyük harflerle ve Latin harfleriyle isimlendirilmiş olarak iletilmelidir.<br>
+                                •	Örneğin: "ESKİ PASAPORT ANTON ANTONOV" veya "YENİ PASAPORT ANTON ANTONOV"<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>                                                                       
+    </div>`,
         ru: ``
     },
     kiptal: {
