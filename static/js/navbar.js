@@ -284,12 +284,30 @@ document.addEventListener('DOMContentLoaded', () => {
                                         Регистрация турецкого персонала
                                         </a>
                                         <div class="dropdown-menu">
-                                            <a href="rtBakanlik.html" class="dropdown-item">
+                                            <a href="tBakanlik.html" class="dropdown-item">
                                             Подготовка документов для министерства
                                             </a>
-                                            <a href="rtgiris.html" class="dropdown-item">Оформление документов на пропуск</a>
+                                            <a href="tgiris.html" class="dropdown-item">Оформление документов на пропуск</a>
                                         </div>
                                     </div>
+                                    <div class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false">
+                                        Экспаты
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <div class="dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false">
+                                            Документы для министерства
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a href="rusbelarus.html" class="dropdown-item">Граждане РФ и Белоруссии </a>
+                                                <a href="cisulkeler.html" class="dropdown-item">Страны СНГ</a>
+                                                <a href="digerulkeler.html" class="dropdown-item">Прочие страны</a>
+                                            </div>
+                                        </div>
+                                        <a href="ygiris.html" class="dropdown-item">Документы для пропуска</a>
+                                    </div>
+                                </div>
                                 </div>
                             </div>
                         </li>
@@ -304,19 +322,19 @@ document.addEventListener('DOMContentLoaded', () => {
                             </a>
                             <div class="dropdown-menu">
                                 <div class="dropdown-menu-column">
-                                    <a class="dropdown-item" href="rkyenileme.html">
+                                    <a class="dropdown-item" href="kyenileme.html">
                                     Обновление пропусков
                                     </a>
-                                    <a class="dropdown-item" href="rkiptal.html">
+                                    <a class="dropdown-item" href="kiptal.html">
                                     Аннулирование пропусков
                                     </a>
-                                    <a class="dropdown-item" href="rksureuzatma.html">
+                                    <a class="dropdown-item" href="ksureuzatma.html">
                                     Продление срока действия пропусков
                                     </a>
-                                    <a class="dropdown-item" href="r90gunbloke.html">
+                                    <a class="dropdown-item" href="doksangunbloke.html">
                                     Активация пропусков в связи с процедурой 90 дней
                                     </a>
-                                    <a class="dropdown-item" href="rvatandaslikdegisim.html">
+                                    <a class="dropdown-item" href="vatandaslikdegisim.html">
                                     Изменение гражданства
                                     </a>
                                 </div>
@@ -333,7 +351,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             </a>
                             <div class="dropdown-menu">
                                 <div class="dropdown-menu-column">
-                                    <a class="dropdown-item" href="rmektupbasvuru.html">
+                                    <a class="dropdown-item" href="mektupbasvuru.html">
                                     Подготовка заявок на письма
                                     </a>
                                     <div class="dropend">
@@ -341,19 +359,19 @@ document.addEventListener('DOMContentLoaded', () => {
                                         Оформление заявок на пропуск транспортного средства
                                         </a>
                                         <div class="dropdown-menu">
-                                            <a href="raracyenibasvuru.html" class="dropdown-item">
+                                            <a href="aracyenibasvuru.html" class="dropdown-item">
                                             Регистрация новых заявок
                                             </a>
-                                            <a href="rsofordegisikligi.html" class="dropdown-item">
+                                            <a href="sofordegisikligi.html" class="dropdown-item">
                                             Смена водителя транспортного средства
                                             </a>
-                                            <a href="rarackirikkart.html" class="dropdown-item">
+                                            <a href="arackirikkart.html" class="dropdown-item">
                                             Оформление заявок на неисправные, поврежденные или изношенные пропуска
                                             </a>
-                                            <a href="rarackayipkart.html" class="dropdown-item">
+                                            <a href="arackayipkart.html" class="dropdown-item">
                                             Оформление заявок на утерянные пропуска
                                             </a>
-                                            <a href="raracfirmadegisim.html" class="dropdown-item">
+                                            <a href="aracfirmadegisim.html" class="dropdown-item">
                                             Изменение данных компании
                                             </a>
                                         </div>
@@ -362,10 +380,10 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <a class="dropdown-item" href="rarackartsuresiuzatma.html">
                                     Продление срока действия пропусков
                                     </a>
-                                    <a class="dropdown-item" href="r90gunblokearac.html">
+                                    <a class="dropdown-item" href="doksangunblokearac.html">
                                     Активация пропусков в связи с процедурой 90 дней
                                     </a>
-                                    <a class="dropdown-item" href="rakiptal.html">
+                                    <a class="dropdown-item" href="akiptal.html">
                                     Аннулирование пропусков
                                     </a>
                                 </div>
@@ -382,17 +400,17 @@ document.addEventListener('DOMContentLoaded', () => {
                             </a>
                             <div class="dropdown-menu">
                                 <div class="dropdown-menu-column">
-                                    <a class="dropdown-item" href="rmalzeme.html">
+                                    <a class="dropdown-item" href="malzeme.html">
                                     Ввоз и вывоз материалов
                                     </a>
-                                    <a class="dropdown-item" href="rdegerlimalzeme.html">
+                                    <a class="dropdown-item" href="degerlimalzeme.html">
                                     Регистрация ценных материалов
                                     </a>
                                 </div>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="raciltir.html"role="button" aria-expanded="false">
+                            <a class="nav-link" href="aciltir.html"role="button" aria-expanded="false">
                                 <span class="nav-link-icon d-md-none d-lg-inline-block">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5"></path><path d="M12 12l8 -4.5"></path><path d="M12 12l0 9"></path><path d="M12 12l-8 -4.5"></path><path d="M16 5.25l-8 4.5"></path></svg>
                                 </span>
@@ -412,23 +430,23 @@ document.addEventListener('DOMContentLoaded', () => {
                             </a>
                             <div class="dropdown-menu">
                                 <div class="dropdown-menu-column">
-                                    <a class="dropdown-item" href="raylikJeton.html">
+                                    <a class="dropdown-item" href="aylikJeton.html">
                                     Выдача жетонов на 1 месяц
                                     </a>
-                                    <a class="dropdown-item" href="ryillikJeton.html">
+                                    <a class="dropdown-item" href="yillikJeton.html">
                                     Выдача годовых жетонов
                                     </a>
-                                    <a class="dropdown-item" href="rjetoniptali.html">
+                                    <a class="dropdown-item" href="jetoniptali.html">
                                     Аннулирование жетонов
                                     </a>
-                                    <a class="dropdown-item" href="rkayipjeton.html">
+                                    <a class="dropdown-item" href="kayipjeton.html">
                                     Аннулирование утерянных жетонов
                                     </a>
                                 </div>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="rabk.html"role="button" aria-expanded="false">
+                            <a class="nav-link" href="abk.html"role="button" aria-expanded="false">
                                 <span class="nav-link-icon d-md-none d-lg-inline-block">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5"></path><path d="M12 12l8 -4.5"></path><path d="M12 12l0 9"></path><path d="M12 12l-8 -4.5"></path><path d="M16 5.25l-8 4.5"></path></svg>
                                 </span>
@@ -438,7 +456,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="rteslimnoktalari.html"role="button" aria-expanded="false">
+                            <a class="nav-link" href="teslimnoktalari.html"role="button" aria-expanded="false">
                                 <span class="nav-link-icon d-md-none d-lg-inline-block">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5"></path><path d="M12 12l8 -4.5"></path><path d="M12 12l0 9"></path><path d="M12 12l-8 -4.5"></path><path d="M16 5.25l-8 4.5"></path></svg>
                                 </span>
