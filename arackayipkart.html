@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatiple" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <title>ARAÇ KAYIP KART</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-flags.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-payments.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-vendors.min.css">   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="./static/css/style.css">
+        <script src="./static/js/languageManager.js"></script>
+        <script src="./static/js/navbar.js" defer></script>
+        <script src="./static/js/contentManager.js" defer></script>
+        <script src="./static/js/footer.js"></script>
+    </head>
+    <body class="layout-boxed">
+        <div class="page">
+            <div id="navbar"></div>
+            <div class="page-wrapper">
+                <div class="page-body">
+                    <div class="container-xl">
+                        <div class="row row-cards">
+                            <div class="col-md-12">
+                                <div id="page-content"></div>
+                                <a id="download-file" href="" download class="btn btn-success w-100 mt-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+                                        <polyline points="7 11 12 16 17 11" />
+                                        <line x1="12" y1="4" x2="12" y2="16" />
+                                    </svg>
+                                    İndir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
+        <script>
+            document.getElementById("download-file").addEventListener("click", function(event) {
+                event.preventDefault();
+                
+                const files = [
+                './static/data/ARAC KART TALEP FORMU V3.xlsm',
+                    './static/data/KAYIP KART TUTANAK.docx',
+                ];
+        
+                files.forEach((file, index) => {
+                    setTimeout(() => {
+                        const a = document.createElement("a");
+                        a.href = file;
+                        a.setAttribute("download", file.substring(file.lastIndexOf("/") + 1)); // Dosya ismini sadece al
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                    }, index * 500); // Dosyalar arka arkaya indirilsin
+                });
+            });
+        </script>        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const accordionItems = document.querySelectorAll('.accordion-collapse');
+                
+                accordionItems.forEach(item => {
+                    item.addEventListener('shown.bs.collapse', function () {
+                        setTimeout(() => {
+                            this.closest('.accordion-item')
+                                .querySelector('.accordion-header')
+                                .scrollIntoView({
+                                    behavior: 'smooth', 
+                                    block: 'start'
+                                });
+                        }, 100);
+                    });
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                let lang = localStorage.getItem('language') || 'tr'; // Varsayılan dil Türkçe
+                loadPageContent('arackayipkart', lang); // İçeriği yükle
+            });
+        </script>
+    </body>
+</html>

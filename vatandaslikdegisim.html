@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatiple" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-        <title>ARAC 90 GÜN BLOKE KALDIRMA</title>
+        <title>VATANDAŞLIK DEĞİŞİMİ</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-flags.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-payments.min.css">
@@ -41,14 +41,13 @@
             </div>
             <div id="footer"></div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script> 
         <script>
             document.getElementById("download-file").addEventListener("click", function(event) {
                 event.preventDefault();
                 
                 const files = [
-                './static/data/90 GUN BLOKE BASVURU.xlsx',
-                    './static/data/ARAC AKTIVASYON MEKTUP.docx',
+                './static/data/Personel Giriş Örnek.xlsm',
                 ];
         
                 files.forEach((file, index) => {
@@ -62,7 +61,7 @@
                     }, index * 500); // Dosyalar arka arkaya indirilsin
                 });
             });
-        </script>        
+        </script>      
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 const accordionItems = document.querySelectorAll('.accordion-collapse');
@@ -84,7 +83,7 @@
         <script>
             document.addEventListener('DOMContentLoaded', () => {
                 let lang = localStorage.getItem('language') || 'tr'; // Varsayılan dil Türkçe
-                loadPageContent('doksangunblokearac', lang); // İçeriği yükle
+                loadPageContent('vatandaslikdegisim', lang); // İçeriği yükle
             });
         </script>
     </body>

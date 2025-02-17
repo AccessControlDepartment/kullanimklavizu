@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatiple" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-        <title>ARAC 90 GÜN BLOKE KALDIRMA</title>
+        <title>ARAÇ MEKTUP BAŞVURU</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-flags.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-payments.min.css">
@@ -42,13 +42,15 @@
             <div id="footer"></div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
+        
         <script>
             document.getElementById("download-file").addEventListener("click", function(event) {
                 event.preventDefault();
                 
                 const files = [
-                './static/data/90 GUN BLOKE BASVURU.xlsx',
-                    './static/data/ARAC AKTIVASYON MEKTUP.docx',
+                './static/data/MEKTUP TASLAĞI-ЧЕРНОВИК ПИСЬМА.docx',
+                    './static/data/ARAC MEKTUP FORMU.xlsm',
+                    './static/data/01-01-03-3720 от 06.02.2023.pdf',
                 ];
         
                 files.forEach((file, index) => {
@@ -84,7 +86,7 @@
         <script>
             document.addEventListener('DOMContentLoaded', () => {
                 let lang = localStorage.getItem('language') || 'tr'; // Varsayılan dil Türkçe
-                loadPageContent('doksangunblokearac', lang); // İçeriği yükle
+                loadPageContent('mektupbasvuru', lang); // İçeriği yükle
             });
         </script>
     </body>
