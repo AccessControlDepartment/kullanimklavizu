@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <nav class="navbar navbar-expand-xl">
             <div class="container-xl">
                 <div>
-                    <a href="rus.html" class="navbar-brand ps-2 fs-4 fw-bolder">
+                    <a href="index.html" class="navbar-brand ps-2 fs-4 fw-bolder">
                         <img src="./static/img/1.jpg" width="110" height="auto" alt="" class="navbar-brand-image">
                         <i style="margin-left:10px;">Система управления пропускным режимом</i>
                     </a>
